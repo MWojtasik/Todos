@@ -1,21 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  SafeAreaView, ScrollView, StyleSheet, View,
+} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { Folder } from './src/components/Folder/Folder';
+import { TodosApp } from './src/components/TodosApp/TodosApp';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default function App(): JSX.Element {
+  return <TodosApp />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
