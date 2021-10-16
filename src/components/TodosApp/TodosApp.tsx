@@ -1,6 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import {
+  Button,
   Colors,
   DefaultTheme, Provider as PaperProvider, Text,
 } from 'react-native-paper';

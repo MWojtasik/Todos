@@ -11,14 +11,14 @@ interface ListCardProps {
 }
 
 export const ListCard = ({ id }: ListCardProps): JSX.Element => {
-  const folder = useSelector((state: RootState) => state.lists[id]);
+  const list = useSelector((state: RootState) => state.lists[id]);
   const {
-    name, remaindersCount, icon, color, backgroundColor,
-  } = folder;
+    name, remaindersCount, icon, color,
+  } = list;
 
   return (
     <TouchableOpacity style={listCardStyles.container}>
-      <ListIcon icon={icon} color={color} backgroundColor={backgroundColor} />
+      <ListIcon icon={icon} color={color} />
       <ListInfo name={name} count={remaindersCount} />
     </TouchableOpacity>
   );

@@ -14,8 +14,6 @@ export const ListsCards = (): JSX.Element => {
   return (
     <>
       {lists}
-      {lists}
-      {lists}
     </>
   );
 };
