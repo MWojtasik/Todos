@@ -1,9 +1,10 @@
 import { StyleSheet } from 'react-native';
+import { Colors } from 'react-native-paper';
 
-export const todosAppStyles = StyleSheet.create({
+export const listsScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eae6e6',
+    backgroundColor: Colors.grey200,
   },
   scrollView: {
     flex: 1,
@@ -13,6 +14,6 @@ export const todosAppStyles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     padding: 25,
-    justifyContent: 'space-around',
+    justifyContent: 'flex-start',
   },
 });
